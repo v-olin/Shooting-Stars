@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stars",
+            "request": "launch",
+            "mainClass": "Stars",
+            "vmArgs": "--module-path C:\\Programmering\\Java\\javafx-sdk-11.0.2\\lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media",
+            "projectName": "ShootingStars_b8f84c0c"
+        }
+    ]
+}
