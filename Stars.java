@@ -7,13 +7,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Random;
-
-import static java.lang.Math.round;
-import static java.lang.Math.sqrt;
-import static java.lang.System.*;
 
 public class Stars extends Application {
     
