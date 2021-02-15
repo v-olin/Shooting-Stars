@@ -160,7 +160,7 @@ public class Stars extends Application {
     private float[] nextSpawnPoint(Interval section){
         var xScale = rand.nextFloat();
         var yScale = rand.nextFloat();
-        var roots = section.getRoot(); // { x, y, z }
+        var roots = section.getRoot(); // { x, y }
 
         return new float[] {
             roots[0] + section.getSpan().xComponent() * xScale, //x spawn
@@ -176,7 +176,7 @@ public class Stars extends Application {
     }
 
     private Star generateStar(){
-        var randSection = rand.nextInt(5);
+        var randSection = rand.nextInt(4);
         var spawn = getInterval(randSection);
         var signum = randSection > 1 ? -1f : 1f;
         var spawnPoint = nextSpawnPoint(spawn);
@@ -230,8 +230,8 @@ public class Stars extends Application {
             Star tmp = starsOnCanvas.get(i);
             var tmpPos = tmp.getPosition();
             var size = tmp.getSize();
-            var x = Math.round(tmpPos[0]) + size / 2;;
-            var y = Math.round(tmpPos[1]) + size / 2;;
+            var x = Math.round(tmpPos[0]) + size / 2;
+            var y = Math.round(tmpPos[1]) + size / 2;
             gc.fillOval(x, y, size, size);
         }
     }
@@ -239,5 +239,4 @@ public class Stars extends Application {
     public static void main(String[] args){
         launch(args);
     }
-
 }
